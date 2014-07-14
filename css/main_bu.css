@@ -1,0 +1,50 @@
+container {
+  border-bottom: 1px solid black;
+  width: 800px;
+  overflow: hidden;
+  display: block;
+  margin: 20px auto;
+  padding: 0 0 20px;
+}
+#left_col,
+#right_col {
+  width: 50%;
+}
+#left_col,
+#right_col {
+  float: left;
+  display: table-cell;
+  vertical-align: middle;
+}
+#right_col {
+  text-align: right;
+}
+adder,
+numbox {
+  border: 1px solid black;
+  margin: 20px;
+}
+numbox {
+  width: 150px;
+  height: 150px;
+  float: right;
+  clear: both;
+}
+adder {
+  display: table;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  float: left;
+  text-align: center;
+}
+adder span.glyphicon {
+  display: table-cell;
+  vertical-align: middle;
+}
+total {
+  width: 800px;
+  margin: 0 auto;
+  display: block;
+  text-align: right;
+}

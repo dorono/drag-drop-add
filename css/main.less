@@ -1,0 +1,102 @@
+@bodyBgColor: #0b9ff4;
+@containerWidth: 35%;
+@borderRadius: 4px;
+@medGreen: #60aa29;
+@darkGreen: #2b561f;
+@darkBlue: #1d3e74;
+@brightOrange: #f4aa0b;
+@numBoxHeight: 100px;
+@numBoxWidth: @numBoxHeight;
+@adderHeight: @numBoxHeight * .75;
+@adderWidth: @adderHeight;
+
+body {
+    background: @bodyBgColor;
+}
+container {
+    width: @containerWidth;
+    overflow: hidden;
+    display: block;
+    margin: 20px auto 0;
+    background-color: @brightOrange;
+    border-radius: @borderRadius;
+}
+#numBoxCol {
+    float: right;
+    width: 100%;
+    text-align: right;
+    position: relative;
+}
+adder,
+numbox {
+    margin: 20px;
+    border-radius: @borderRadius;
+}
+adder {
+    display: table;
+    width: @adderWidth;
+    height: @adderHeight;
+    position: absolute;
+    top: 50%;
+    margin-top: -@adderHeight / 2;
+    float: left;
+    text-align: center;
+    background-color: @medGreen;
+    cursor: move;
+    span.glyphicon {
+        display: table-cell;
+        vertical-align: middle;
+        font-size: 22px;
+    }    
+}
+numbox {
+    display: table;
+    vertical-align: middle;
+    width: @numBoxHeight;
+    height: @numBoxWidth;
+    float: right;
+    clear: both;
+    background-color: @darkBlue;
+    color: #fff;
+    text-align: center;
+    span {
+       display: table-cell;
+       vertical-align: middle; 
+       font-size: 50px;
+       text-shadow: 2px 2px #000;
+    }
+}
+total {
+    margin: 0 auto;
+    display: block;
+    text-align: right;
+    background-color: @darkGreen;
+    clear: both;
+    color: @brightOrange;
+    font-size: 40px;
+    padding: 10px 20px;
+    span {
+        color: #fff;
+    }
+    button {
+        clear: both;
+    }
+}
+footer {
+    width: @containerWidth;
+    margin: 10px auto;
+    text-align: right;
+    button {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 12px;
+        padding: 5px;
+        background-color: #fff;
+        color: #1d3e74;   
+        border: 0;
+        border-radius: @borderRadius;
+    }
+    button:hover {
+        color: #999;
+    }
+}

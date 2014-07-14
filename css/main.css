@@ -1,0 +1,90 @@
+body {
+  background: #0b9ff4;
+}
+container {
+  width: 35%;
+  overflow: hidden;
+  display: block;
+  margin: 20px auto 0;
+  background-color: #f4aa0b;
+  border-radius: 4px;
+}
+#numBoxCol {
+  float: right;
+  width: 100%;
+  text-align: right;
+  position: relative;
+}
+adder,
+numbox {
+  margin: 20px;
+  border-radius: 4px;
+}
+adder {
+  display: table;
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  top: 50%;
+  margin-top: -37.5px;
+  float: left;
+  text-align: center;
+  background-color: #60aa29;
+  cursor: move;
+}
+adder span.glyphicon {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 22px;
+}
+numbox {
+  display: table;
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+  float: right;
+  clear: both;
+  background-color: #1d3e74;
+  color: #fff;
+  text-align: center;
+}
+numbox span {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 50px;
+  text-shadow: 2px 2px #000;
+}
+total {
+  margin: 0 auto;
+  display: block;
+  text-align: right;
+  background-color: #2b561f;
+  clear: both;
+  color: #f4aa0b;
+  font-size: 40px;
+  padding: 10px 20px;
+}
+total span {
+  color: #fff;
+}
+total button {
+  clear: both;
+}
+footer {
+  width: 35%;
+  margin: 10px auto;
+  text-align: right;
+}
+footer button {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 5px;
+  background-color: #fff;
+  color: #1d3e74;
+  border: 0;
+  border-radius: 4px;
+}
+footer button:hover {
+  color: #999;
+}
