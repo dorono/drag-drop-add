@@ -39,8 +39,8 @@ function randomAdditionBox(){
         generateNumbers();        
     }
 
-    // Here is where we execute the functionality that happens upon the user
-    // dragging the adder into the number box. 
+    // Here is where we execute the animation and functionality that happens 
+    // upon the user dragging the adder into the number box. 
     $("numbox").droppable({
         drop: function(){
             var boxWidth = $(this).width(),
